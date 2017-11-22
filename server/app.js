@@ -2,14 +2,16 @@ var express = require("express");
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var path = require('path');
-
-const db = require('../models/db');
+var routes = require('../routes');
+const db = require('../models').db;
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+
+app.use('/api', routes);
 
 app.use(function(req, res, next) {
   console.log("Hello from app.js");
