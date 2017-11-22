@@ -8,7 +8,7 @@ var {
   Hotel,
   Restaurant,
   Activity
-} = require('./models');
+} = require('../models');
 
 var data = {
   hotel: [

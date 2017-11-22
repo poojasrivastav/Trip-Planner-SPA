@@ -15,10 +15,12 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mapbox-gl": "^0.40.1",
     "morgan": "^1.9.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sequelize": "^4.22.11"
   }
 }
